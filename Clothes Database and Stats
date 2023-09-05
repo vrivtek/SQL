@@ -1,0 +1,18 @@
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO clothes VALUES (1,"short sleeve shirts", 6, 20);
+INSERT INTO clothes VALUES (2,"long sleeve shirts", 6, 35);
+INSERT INTO clothes VALUES (3,"shorts", 10, 40);
+INSERT INTO clothes VALUES (4,"jeans", 10, 60);
+INSERT INTO clothes VALUES (5,"sweat pants", 10, 55);
+INSERT INTO clothes VALUES (6,"rashgaurd", 15, 27);
+INSERT INTO clothes VALUES (7, "Jersey", 15, 100);
+INSERT INTO clothes VALUES (8, "JORTS", 15, 45);
+INSERT INTO clothes VALUES (9, "sweaters", 15, 55);
+INSERT INTO clothes VALUES (10, "socks", 15, 15);
+INSERT INTO clothes VALUES (11, "Undies", 15, 25);
+INSERT INTO clothes VALUES (12, "baseball hats",20,45);
+INSERT INTO clothes VALUES (13, "snap back hats",25,50);
+SELECT * FROM clothes WHERE price <=50;
+
+- Showing all clothes priced $50 and below
+SELECT * FROM clothes WHERE price <=50;
