@@ -1,0 +1,24 @@
+CREATE TABLE Serenity_Vibez  (ID INTEGER PRIMARY KEY, ITEM TEXT, QUANTITY INTEGER, PRICE INTEGER);
+INSERT INTO Serenity_vibez VALUES (1,"Short sleeve shirts", 6, 20.99);
+INSERT INTO Serenity_vibez VALUES (2,"Long sleeve shirts", 6, 35.99);
+INSERT INTO Serenity_vibez VALUES (3,"Shorts", 10, 40.99);
+INSERT INTO Serenity_vibez VALUES (4,"Jeans", 10, 60.99);
+INSERT INTO Serenity_vibez VALUES (5,"Sweat Pants", 10, 55.99);
+INSERT INTO Serenity_vibez VALUES (6,"Rashgaurd", 15, 27.99);
+INSERT INTO Serenity_vibez VALUES (7, "Jersey", 15, 100.99);
+INSERT INTO Serenity_vibez VALUES (8, "JORTS", 15, 45.99);
+INSERT INTO Serenity_vibez VALUES (9, "Sweaters", 15, 55.99);
+INSERT INTO Serenity_vibez VALUES (10, "Socks", 15, 15.99);
+INSERT INTO Serenity_vibez VALUES (11, "Undies", 15, 25.99);
+INSERT INTO Serenity_vibez VALUES (12, "Baseball hats",20,45.99);
+INSERT INTO Serenity_vibez VALUES (13, "Snap back hats",25,50.99);
+
+--display items $50 and below
+SELECT * FROM Serenity_vibez WHERE price <=50;
+
+--display items $50 and above
+SELECT * FROM Serenity_Vibez WHERE price >=50;
+
+--What is the least stocked item?
+SELECT * FROM Serenity_Vibez WHERE quantity <=15;
+
