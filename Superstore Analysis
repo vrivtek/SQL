@@ -1,0 +1,30 @@
+SELECT SUM (price), item_name
+FROM superstore
+GROUP BY item_name;
+
+SELECT SUM(price)
+FROM superstore;
+
+SELECT AVG(price)
+FROM superstore;
+
+SELECT MAX(price)
+FROM superstore;
+
+SELECT MIN(price)
+FROM superstore;
+
+SELECT COUNT(price)
+FROM superstore;
+
+SELECT*
+FROM superstore
+WHERE price>30
+ORDER BY price
+
+
+What is the total price of Appliances sold? 
+
+SELECT SUM (price), category
+FROM superstore
+GROUP BY category;
